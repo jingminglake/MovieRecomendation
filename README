@@ -1,0 +1,36 @@
+Course number: 8650
+
+Course Name : Date Mining
+
+Project Name: Social Filtering Movie Recommendation System
+
+
+Project description: A novel movie recommendation which combines normal collaborative filtering algorithm as well as social relationship. 
+
+1. The commands to run this program: 
+  make clang
+  ./run
+
+2. The final predict result will show in commandline and also save in data/testData/predictResult 
+
+Main Functions Finished::
+1. Combine the users in the users' history file(user_history.txt) and users in the social relation's file(user_social.txt)
+
+2. Get the movies from users' history and build the user to moive rating matrix by using the information in the traing_set
+
+3. Build users' social relationship graph 
+
+4. Get the predict Pairs from the predictSource file(also considering if the pair is suitable for our algorithm) 
+
+5. Calculate the similarity users for each user in predict pairs
+
+6. Find the shorest path to each similarity users(we use a improvement of dijkstra algorithm could find all the minimum path and we also design functions to slove two equal path weight problem)
+
+7. Improve the similarity for each similar user by using the minimum path to the similar user
+  
+8. Give the predicion of each pair
+
+9. Evaluation works based on some pre-drawed evaluation datasets  
+
+ 
+
